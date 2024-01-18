@@ -5,6 +5,8 @@ import Home from './components/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AllCountries from './components/countries/All.js';
 import CountryDetails from './components/countries/CountryDetails.js';
+import PricingPage from './components/PricingPage.js';
+import BmiCalc from './components/BmiCalc.js';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -16,13 +18,10 @@ function App() {
     }
   }, [theme]);
   return (
-    <div className="">
-      <header className={`shadow ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
-        <div className="container mx-auto py-4">
-          <Navbar />
-        </div>
-      </header>
-      <main className="container m-4 mx-auto px-4 ">
+    <div className="App">
+      <Navbar theme={theme}/>
+
+      <main className={` ${theme === 'dark' ? 'bg-gray' : 'bg-off-whi'}`}>
       <a
               className="mt-2 hover:text-gray-800 float-right"
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
@@ -37,7 +36,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/all" element={<AllCountries theme={theme}/>} />
+            <Route path="/pricing" element={<PricingPage theme={theme}/>} />
             <Route path="/country/:name" element={<CountryDetails theme={theme}/>} />
+            <Route path="/bmi" element={<BmiCalc />} />
           </Routes>
         </Router>
       </main>

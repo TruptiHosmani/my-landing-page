@@ -23,7 +23,7 @@ function AllCountries({theme}) {
 
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-32">
             <h1 className="text-2xl font-bold mb-4  py-4">All Countries</h1>
             < div className="flex flex-wrap gap-4 my-4">
                 <div className="relative">
@@ -32,7 +32,7 @@ function AllCountries({theme}) {
                         value={searchTerm}
                         onChange={e => setSearchTerm(e.target.value)}
                         placeholder="Search by country"
-                        className={`p-5 rounded-lg pl-8 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}
+                        className={`shadow-md p-5 bg-p-5 rounded-lg pl-8 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}
                     />
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400 h-6 w-6">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -70,7 +70,7 @@ function AllCountries({theme}) {
                 {filteredCountries.map((country, index) => (
                     <Link to={`/country/${country.name.common}`} key={index}> {/* Add Link here */}
 
-                        <div className={`shadow-md p-4  h-64 overflow-y rounded-lg ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'}`} key={index}>
+                        <div className={`shadow-md p-4  h-64 overflow-y rounded-lg  hover:bg-indigo-100 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'}`} key={index}>
                             <img className="w-full h-auto" src={country.flags.png} alt={country.name.common} />
                             <h2 className="text-xl font-semibold mt-2">{country.name.common}</h2>
                             <h3 className="text-base mt-1">{country.capital}</h3>
