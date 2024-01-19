@@ -22,7 +22,7 @@
     "tailwindcss": "^3.4.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://truptihosmani.github.io/my-landing-page",
+  "homepage": "https://truptihosmani.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
