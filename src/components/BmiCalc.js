@@ -52,11 +52,11 @@ function BmiCalc () {
                     <div className="flex flex-col w-full sm:w-1/2">
                         <div className="mb-4">
                             <label htmlFor="weight" className="block text-indigo-700 text-sm font-bold mb-2">Weight:</label>
-                            <input id="weight" type="number" onChange={e => setHeight(e.target.value)}  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                            <input id="weight" type="number" onChange={e => setHeight(e.target.value)}  className="shadow appearance-none border border-indigo-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="height" className="block text-indigo-700 text-sm font-bold mb-2">Height:</label>
-                            <input id="height" type="number" onChange={e => setWeight(e.target.value)}  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                            <input id="height" type="number" onChange={e => setWeight(e.target.value)}  className="shadow appearance-none border border-indigo-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                         </div>
                     </div>
                     <button className="p-2 bg-indigo-500 text-white rounded w-full md:w-auto" onClick={calculateBMI}>Calculate BMI</button>

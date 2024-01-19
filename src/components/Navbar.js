@@ -26,10 +26,10 @@ const Navbar = ({theme}) => {
         </button>
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
-        <a href="/" className="text-sm font-semibold leading-6 text-gray-900">Home</a>
-        <a href="/#projects" className="text-sm font-semibold leading-6 text-gray-900">Projects</a>
-        <a href="/pricing" className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
-      <a href="/#contact" className="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+        <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Home</a>
+        <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Projects</a>
+        <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+      <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Contact</a>
       </div>
     </nav>
     <div className={`lg: ${isOpen ? 'block' : 'hidden'}`} role="dialog" aria-modal="true">
@@ -50,10 +50,10 @@ const Navbar = ({theme}) => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                <a href="/#projects" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products</a>
-                <a href="/pricing" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pricing</a>
-                <a href="/#contact" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                <a href={`${process.env.PUBLIC_URL}/`} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+                <a href={`${process.env.PUBLIC_URL}/`} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products</a>
+                <a href={`${process.env.PUBLIC_URL}/pricing`} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pricing</a>
+                <a href={`${process.env.PUBLIC_URL}/`} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
               </div>
             </div>
           </div>

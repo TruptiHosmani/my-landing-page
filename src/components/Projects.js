@@ -18,9 +18,9 @@ const Projects = () => {
             </div> */}
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-b border-gray-200 pb-10 sm:mt-16 sm:pb-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-b border-gray-200 pb-10 sm:mt-16 sm:pb-16 lg:mx-0 lg:max-w-none lg:grid-cols-3  lg:flex lg:flex-wrap lg:items-stretch">
             <article className="flex max-w-xl flex-col items-start justify-between">
-              <Link to="/all">
+              <Link to={`/all`}>
                 <div className="shadow-lg flex flex-col justify-between p-4 hover:bg-indigo-100 rounded-lg">
                   <h2 className="text-xl font-semibold mb-2">REST World API</h2>
                   <div className="flex items-center gap-x-4 text-xs">
@@ -55,7 +55,7 @@ const Projects = () => {
             </article>
 
             <article className="flex max-w-xl flex-col items-start justify-between">
-              <Link to="/bmi">
+              <Link to={`/bmi`}>
                 <div className="shadow-lg flex flex-col justify-between p-4 hover:bg-indigo-100 rounded-lg">
                   <h2 className="text-xl font-semibold mb-2">BMI calculator</h2>
                   <div className="flex items-center gap-x-4 text-xs">

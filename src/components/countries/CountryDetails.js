@@ -23,7 +23,7 @@ function CountryDetails({theme}) {
 
   return (
     <div className='container mx-auto p-4 sm:p-32'>
-        <Link to="/all" className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Back to All Countries</Link> {/* Add this line */}
+        <Link to={`/all`} className="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">Back to All Countries</Link> {/* Add this line */}
 
         {country && <div className={`rounded-md grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-12 my-4 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'}`}>
             <div className="shadow-md p-4">

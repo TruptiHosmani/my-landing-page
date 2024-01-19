@@ -4,7 +4,7 @@ function Footer() {
         <div className="mx-auto max-w-screen-xl">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
-                    <a href="/" className="flex items-center">
+                    <a href={`${process.env.PUBLIC_URL}/`} className="flex items-center">
                         <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="mr-3 h-8" alt="tailwind" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Trupti' Portfolio</span>
                     </a>
