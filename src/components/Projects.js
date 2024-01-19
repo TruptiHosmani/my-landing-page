@@ -59,13 +59,13 @@ const Projects = () => {
                 <div className="shadow-lg flex flex-col justify-between p-4 hover:bg-indigo-100 rounded-lg">
                   <h2 className="text-xl font-semibold mb-2">BMI calculator</h2>
                   <div className="flex items-center gap-x-4 text-xs">
-                    <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                    <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">REST API</span>
-                    <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Tailwind</span>
+                    <time dateTime="2020-03-16" className="text-gray-500">Jan 18, 2024</time>
                     <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">React</span>
+                    <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Tailwind</span>
+                    <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">react-gauge-chart</span>
                   </div>
                   <div className="group relative">
-                    <h3 className="text-base mb-4">REST Countries is a project made with API which also has a color theme switcher feature. You can view the list of all countries and find a specific one via search or by filtering regions. By navigating to the individual country page, you are able to see more details about the country like native name and even border countries.</h3>
+                    <h3 className="text-base mb-4">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. View the BMI tables or use the tool below to compute yours.</h3>
                     <img src={bigHero} alt="Project 1" />
                   </div>
                 </div>

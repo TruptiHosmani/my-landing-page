@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 function PricingPage() {
   return (
     <>
-    <main className="bg-off-white py-32">
+    <main className="py-16">
             <Navbar />
             <div className="" >
                 <section className="dark:bg-gray-900 border-b" id="projects">
