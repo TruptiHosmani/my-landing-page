@@ -47,7 +47,7 @@ const Projects = () => {
                     <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">React</span>
                   </div>
                   <div className="group relative">
-                    <h3 className="text-base mb-4">REST Countries is a project made with API which also has a color theme switcher feature. You can view the list of all countries and find a specific one via search or by filtering regions. By navigating to the individual country page, you are able to see more details about the country like native name and even border countries.</h3>
+                    <h3 className="text-base mb-4">Pricing page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</h3>
                     <img src={proj3} alt="Project 1" />
                   </div>
                 </div>
