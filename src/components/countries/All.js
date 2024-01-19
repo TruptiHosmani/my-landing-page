@@ -23,7 +23,7 @@ function AllCountries({theme}) {
 
 
     return (
-        <div className="container mx-auto p-32">
+        <div className="container mx-auto p-4 sm:p-32">
             <h1 className="text-2xl font-bold mb-4  py-4">All Countries</h1>
             < div className="flex flex-wrap gap-4 my-4">
                 <div className="relative">
@@ -66,11 +66,11 @@ function AllCountries({theme}) {
                     <option value="French">French</option>
                 </select>
             </div>
-            <div className="grid grid-cols-5 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 my-4">
                 {filteredCountries.map((country, index) => (
                     <Link to={`/country/${country.name.common}`} key={index}> {/* Add Link here */}
 
-                        <div className={`shadow-md p-4  h-64 overflow-y rounded-lg  hover:bg-indigo-100 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'}`} key={index}>
+                        <div className={`shadow-md p-4 sm:h-64 md:h-64 lg:h-400 overflow-y rounded-lg  hover:bg-indigo-100 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'}`} key={index}>
                             <img className="w-full h-auto" src={country.flags.png} alt={country.name.common} />
                             <h2 className="text-xl font-semibold mt-2">{country.name.common}</h2>
                             <h3 className="text-base mt-1">{country.capital}</h3>
