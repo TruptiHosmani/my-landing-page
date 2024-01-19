@@ -11,7 +11,7 @@ const Navbar = ({theme}) => {
   <header className={`absolute inset-x-0 top-0 z-50 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
     <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1">
-        <a href="#about" className="flex items-center">
+        <a href={`${process.env.PUBLIC_URL}/`} className="flex items-center">
           <span className="sr-only"></span>
           <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
           <h1 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white p-2">Trupti's Portfolio</h1>
@@ -28,7 +28,7 @@ const Navbar = ({theme}) => {
       <div className="hidden lg:flex lg:gap-x-12">
         <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Home</a>
         <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Projects</a>
-        <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
+        <a href={`${process.env.PUBLIC_URL}/pricing`} className="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
       <a href={`${process.env.PUBLIC_URL}/`} className="text-sm font-semibold leading-6 text-gray-900">Contact</a>
       </div>
     </nav>

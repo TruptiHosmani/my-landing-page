@@ -18,10 +18,10 @@ const Projects = () => {
             </div> */}
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-b border-gray-200 pb-10 sm:mt-16 sm:pb-16 lg:mx-0 lg:max-w-none lg:grid-cols-3  lg:flex lg:flex-wrap lg:items-stretch">
-            <article className="flex max-w-xl flex-col items-start justify-between">
-              <Link to={`/all`}>
-                <div className="shadow-lg flex flex-col justify-between p-4 hover:bg-indigo-100 rounded-lg">
+          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-b border-gray-200 pb-10 sm:mt-16 sm:pb-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:grid-rows-1">
+          <article className="flex max-w-xl flex-col items-start justify-between">
+              <Link to={`/all`} className="flex flex-col h-full">
+              <div className="shadow-lg  p-4 hover:bg-indigo-100 rounded-lg h-full">
                   <h2 className="text-xl font-semibold mb-2">REST World API</h2>
                   <div className="flex items-center gap-x-4 text-xs">
                     <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
@@ -37,8 +37,8 @@ const Projects = () => {
               </Link>
             </article>
             <article className="flex max-w-xl flex-col items-start justify-between">
-              <Link to="/pricing">
-                <div className="shadow-lg flex flex-col justify-between p-4 hover:bg-indigo-100 rounded-lg">
+              <Link to="/pricing" className="flex flex-col h-full">
+              <div className="shadow-lg p-4 hover:bg-indigo-100 rounded-lg h-full">
                   <h2 className="text-xl font-semibold mb-2">Pricing Page</h2>
                   <div className="flex items-center gap-x-4 text-xs">
                     <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
@@ -47,7 +47,7 @@ const Projects = () => {
                     <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">React</span>
                   </div>
                   <div className="group relative">
-                    <h3 className="text-base mb-4">Pricing page Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</h3>
+                    <h3 className="text-base mb-4">Pricing page.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum</h3>
                     <img src={proj3} alt="Project 1" />
                   </div>
                 </div>
@@ -55,8 +55,8 @@ const Projects = () => {
             </article>
 
             <article className="flex max-w-xl flex-col items-start justify-between">
-              <Link to={`/bmi`}>
-                <div className="shadow-lg flex flex-col justify-between p-4 hover:bg-indigo-100 rounded-lg">
+              <Link to={`/bmi`} className="flex flex-col h-full">
+                <div className="shadow-lg p-4 hover:bg-indigo-100 rounded-lg h-full">
                   <h2 className="text-xl font-semibold mb-2">BMI calculator</h2>
                   <div className="flex items-center gap-x-4 text-xs">
                     <time dateTime="2020-03-16" className="text-gray-500">Jan 18, 2024</time>
@@ -65,7 +65,7 @@ const Projects = () => {
                     <span className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">react-gauge-chart</span>
                   </div>
                   <div className="group relative">
-                    <h3 className="text-base mb-4">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. View the BMI tables or use the tool below to compute yours.</h3>
+                    <h3 className="text-base mb-4">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. View the BMI tables or use the tool below to compute yours.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum</h3>
                     <img src={bigHero} alt="Project 1" />
                   </div>
                 </div>
