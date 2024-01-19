@@ -107,7 +107,7 @@ function ToolsAndTechnologies() {
                     </div>
                     <div className='software-skill-inline center center' name='ruby'>
                         <div className="flex flex-col items-center">
-                            <img src="https://rubyonrails.org/assets/images/logo.svg" className='mr-2 fa-4x' />
+                            <img src="https://rubyonrails.org/assets/images/logo.svg" alt="rails" className='mr-2 fa-4x' />
                             <p>Ruby on Rails</p>
                         </div>
                     </div>
